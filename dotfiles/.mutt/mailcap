@@ -1,0 +1,4 @@
+image/*; /usr/local/bin/mutt-open '%s'
+application/pdf; /usr/local/bin/mutt-open '%s'
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; /usr/local/bin/mutt-open '%s'
+OpenDocument Text; /usr/local/bin/mutt-open '%s'

@@ -1,0 +1,11 @@
+---
+- hosts: all
+  remote_user: tomswiggers
+  become_method: sudo
+  tasks:
+    - name: Ping the node
+      ping:
+    - name: Install urxvt
+      pacman:
+        name: rxvt-unicode
+        state: latest

@@ -9,3 +9,13 @@
       pacman:
         name: rxvt-unicode
         state: latest
+    - name: Copy 
+      copy:
+        src: dotfiles/.Xresources 
+        dest: ~/.Xresources
+     - name: Copy 
+      copy:
+        src: dotfiles/.urxvt/ext/font-size 
+        dest: ~/.urxvt/ext/font-size
+    
+

@@ -1,0 +1,3 @@
+---
+- import_playbook: terminal.yml
+- import_playbook: mail.yml

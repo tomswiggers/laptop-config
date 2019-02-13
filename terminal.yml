@@ -4,14 +4,22 @@
   tasks:
     - name: Ping the node
       ping:
-    - name: Install urxvt
+    - name: Install packages
       pacman:
-        name: rxvt-unicode
+        name: rxvt-unicode, terminus-font
         state: latest
     - name: Copy 
       copy:
         src: dotfiles/.Xdefaults 
         dest: /home/tomswiggers/.Xdefaults
+        owner: tomswiggers
+        group: tomswiggers
+    - name: mkdir
+      file:
+        path: /home/tomswiggers/.urxvt/ext
+        state: directory    
+        owner: tomswiggers
+        group: tomswiggers
     - name: Copy 
       copy:
         src: dotfiles/.urxvt/ext/font-size 

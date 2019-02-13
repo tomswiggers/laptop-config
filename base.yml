@@ -6,6 +6,6 @@
       ping:
     - name: Install packages
       pacman:
-        name: git, vim, dialog, chromium
+        name: git, tig, vim, dialog, chromium
         state: latest
 

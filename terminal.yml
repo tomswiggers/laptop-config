@@ -1,7 +1,6 @@
 ---
 - hosts: all
-  remote_user: tomswiggers
-  become_method: sudo
+  become: yes
   tasks:
     - name: Ping the node
       ping:
@@ -11,11 +10,11 @@
         state: latest
     - name: Copy 
       copy:
-        src: dotfiles/.Xresources 
-        dest: ~/.Xresources
-     - name: Copy 
+        src: dotfiles/.Xdefaults 
+        dest: /home/tomswiggers/.Xdefaults
+    - name: Copy 
       copy:
         src: dotfiles/.urxvt/ext/font-size 
-        dest: ~/.urxvt/ext/font-size
+        dest: /home/tomswiggers/.urxvt/ext/font-size
     
 

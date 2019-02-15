@@ -17,5 +17,4 @@
     
 
         #sway
-        #swaylock
-
+        #curl -L -O https://aur.archlinux.org/cgit/aur.git/snapshot/swaylock-git.tar.gz

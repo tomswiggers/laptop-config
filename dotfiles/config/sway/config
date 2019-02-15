@@ -71,6 +71,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     # start your launcher
     bindsym $mod+d exec $menu
 
+    # lock laptop
+    bindsym $mod+x exec swaylock
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.

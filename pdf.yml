@@ -6,6 +6,6 @@
       ping:
     - name: Install packages
       pacman:
-        name: pandoc, wkhtmltopdf
+        name: pandoc, wkhtmltopdf, mupdf
         state: latest
 

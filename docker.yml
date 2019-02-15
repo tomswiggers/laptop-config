@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Ping the node
+      ping:
+    - name: Install packages
+      pacman:
+        name: docker
+        state: latest
+    - name: Add user to group
+      user:
+        name: tomswiggers
+        groups: docker
+        append: yes
+    
+

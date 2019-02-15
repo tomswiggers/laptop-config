@@ -16,4 +16,5 @@ URxvt.perl-ext-common: default,clipboard,font-size
 ! disable printing shortcut
 urxvt.print-pipe: 'cat > /dev/null'
 
-
+urxvt*depth: 32
+!urxvt*background: rgba: 0218/0218/0218/4444

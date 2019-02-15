@@ -6,7 +6,7 @@
       ping:
     - name: Install packages
       pacman:
-        name: rxvt-unicode, terminus-font
+        name: rxvt-unicode, urxvt-perls, terminus-font
         state: latest
     - name: Copy 
       copy:

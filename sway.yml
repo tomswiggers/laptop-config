@@ -1,0 +1,21 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Ping the node
+      ping:
+    - name: Install packages
+      pacman:
+        name: dmenu
+        state: latest
+    - name: Copy 
+      copy:
+        src: dotfiles/config/sway/config
+        dest: /home/tomswiggers/.config/sway/config
+        owner: tomswiggers
+        group: tomswiggers
+    
+
+        #sway
+        #swaylock
+

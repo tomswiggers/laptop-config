@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Ping the node
+      ping:
+    - name: Install packages
+      pacman:
+        name: pandoc, wkhtmltopdf
+        state: latest
+

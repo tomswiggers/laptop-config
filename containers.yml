@@ -6,12 +6,16 @@
       ping:
     - name: Install packages
       pacman:
-        name: docker
+        name: docker, rkt
         state: latest
+    - name: add rkt group
+      group:
+        name: rkt
+        state: present
     - name: Add user to group
       user:
         name: tomswiggers
-        groups: docker
+        groups: docker, rkt
         append: yes
     
 

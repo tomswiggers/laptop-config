@@ -8,4 +8,10 @@
       pacman:
         name: git, tig, vim, dialog, chromium, firefox
         state: latest
+    - name: vimrc file 
+      copy:
+        src: dotfiles/.vimrc 
+        dest: /home/tomswiggers/.vimrc
+        owner: tomswiggers
+        group: tomswiggers
 
